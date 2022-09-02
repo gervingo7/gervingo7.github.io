@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 440px 30px 100px;
+
+    grid-template-areas: "header header"
+                        "formulario main"
+                        "siguiente ."
+                        "footer footer";
+
+}
+.contenedor{
+    background-color: white;
+    border-radius: 4px;
+}
+.contenedor .header{
+    grid-area: header;
+    background: #1f53c5;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor .header h2{
+    text-align: center;
+}
+.contenedor .header a{
+    text-decoration: none;
+    color: white;
+}
+.contenedor .formulario{
+    grid-area: formulario;
+    display: flex;
+    justify-content: center;
+}
+.contenedor .formulario h1{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.formulario .control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #1f53c5;
+    color: black;
+}
+.formulario label{
+    display: block;
+    text-align: left;
+    
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+.contenedor .main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+
+}
+.tabla{
+    width: 90%;
+}  
+.table{
+    width: 100%;
+    margin-top: 10px;
+}
+.table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.table, th{
+    height: 10px;
+}
+.siguiente{
+    grid-area: siguiente;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    width: 25%;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: green;
+    text-align: center;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .footer{
+    display: grid;
+    grid-area: footer;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #1f53c5;
+    text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+
+    .contenedor{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto auto 100px;
+    
+        grid-template-areas: "header"
+                            "formulario"
+                            "main"
+                            "siguiente"
+                            "footer";
+    
+    }
+}

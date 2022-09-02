@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>catalogo</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="titulo"><h2>SISTEMAS INFORMATICOS GÓMEZ</h2><br>
+            <a href="index.html"><center>INICIO</center></a></div>
+            <a href="verpedido.html"> <div class="img"> <img src="carrito.png" alt=""></div></a>
+        </header>
+
+	<main class="main">
+			<div class="estiloPantallaPrincipal">
+
+				<div class="estiloParaElContenido">
+					<div class='contenedorDeElementos'>  
+						<div class="estiloParaLosElementos">
+							<table class="table table-bordered table-striped">
+		
+								<thead>
+										
+									<tr>
+										<th>CODIGO</th>
+										<th>DESCRIPCION</th>
+										<th>CANTIDAD</th>
+										<th>PRECIO</th>
+										<th>TOTAL</th>
+											
+									</tr>
+										
+								</thead>
+		
+								<tbody id="detalleDelPedido">
+								</tbody>
+		
+							</table>
+		
+							<br><br>
+							<label for="total"> <b> TOTAL DE SU PEDIDO: </b> </label>
+							<label id="total" name="total">20.5</label>
+		
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+        <footer class="footer">
+            <P>
+                San Rafael Las Flores, Santa Rosa <br>
+                Contáctenos: <br>
+                Email: sistemasgomez@gmail.com <br>
+                Tel: 58751343
+            </P>
+        </footer>
+        <script src="catalogo.js"></script>
+        <script type="text/javascript">
+            IniciarProductosAutomaticamente();
+        </script>
+</body>
+</html>

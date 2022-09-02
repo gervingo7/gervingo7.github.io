@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agregarproducto.css">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <div class="contenedor">
+    <header class="header">
+        <h1>SISTEMAS INFORMATICOS GÓMEZ</h1>
+    </header>
+    <main class="main">
+        <form class="formulario" action="">
+            <h4>AGREGAR PRODUCTO</h4>
+            
+            <label for="codigo">Codigo</label>
+            <input class="control" type="number" name="codigo" id="id" >
+            
+            <label for="nombre">Nombre</label>
+            <input class="control" type="text" name="nombre" id="name" >
+            
+            <label for="precio">Precio</label>
+            <input class="control" type="number" name="precio" id="price" >
+        
+            <label for="image">Imagen del producto</label>
+            <input class="file" type="file" name="image" id="image">
+            <div class="form-file_result" id="result-image">
+                <img id="img-result" alt="">
+            </div>
+
+            <button class="boton" type="button" name="boton" id="botonguardar">Guardar</button>
+        </form>
+
+    </main>
+    <div class="tabla">   
+        <h4> CATALOGO DE PRODUCTOS</h4> 
+        <table class="table" id="tabla1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <P>
+            San Rafael Las Flores, Santa Rosa <br>
+            Contáctenos: <br>
+            Email: sistemasgomez@gmail.com <br>
+            Tel: 58751343
+        </P>
+</footer>
+
+      </div>
+      <script src="agregarproducto.js"> </script>
+      <script src="logicproducto.js"> </script>
+      <script src="interfazproducto.js"> </script>
+</body>
+</html>
