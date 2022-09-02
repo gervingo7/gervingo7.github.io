@@ -1,0 +1,160 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 900px auto;
+    grid-template-rows: 100px 490px 100px;
+
+    grid-template-areas: "header header"
+                        "aside sesion"
+                        "footer footer";
+
+}
+
+.contenedor .header{
+    grid-area: header;
+    text-align: center;
+    background: #1f53c5;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .aside .menu{
+    width: 50%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contenedor .aside .menu h4{
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+.contenedor .boton{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: green;
+}
+.contenedor .aside a{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: green;
+}
+.contenedor .aside .menu .accesorios{
+    width: 100%;
+}
+.contenedor .sesion{
+    grid-area: sesion;
+    display: flex;
+    align-items: center;
+}
+.contenedor .sesion .formulario h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.contenedor .formulario{
+    width: 60%;
+}
+.control{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border: 1px solid #1f53c5;
+    color: black;
+}
+.boton{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background-color: green;
+    color: white;
+}
+
+.contenedor .footer{
+    display: grid;
+    grid-area: footer;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #1f53c5;
+    text-align: center;
+}
+@media screen and (max-width: 1500px) {
+    .contenedor{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 490px 100px;
+    
+        grid-template-areas: "header header"
+                            "aside sesion"
+                            "footer footer";
+    
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .contenedor{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto 100px;
+    
+        grid-template-areas: "header"
+                            "aside"
+                            "sesion"
+                            "footer";
+    
+    }
+    .contenedor .sesion{
+        grid-area: sesion;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+  
+@media screen and (max-width: 430px) {
+    .contenedor .main .formulario{
+        width: 300px;
+        display: block;
+    }
+}
